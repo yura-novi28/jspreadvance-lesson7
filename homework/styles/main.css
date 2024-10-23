@@ -1,0 +1,227 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+body {
+  font-family: sans-serif;
+}
+
+strong {
+  font-weight: 700;
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.form-search {
+  display: flex;
+  justify-content: space-between;
+  margin: 5px 0;
+}
+.form-search__text {
+  width: 49%;
+  height: 30px;
+  outline: 0;
+  border: 1px solid gray;
+  background-color: #fff;
+  padding-left: 5px;
+  border-radius: 5px;
+  color: gray;
+}
+.form-search__text:focus {
+  outline: 3px solid rgba(0, 162, 255, 0.472);
+}
+.form-search__button {
+  width: 49%;
+  height: 30px;
+  background-color: #30bc48;
+  outline: 0;
+  border: 0;
+  color: #fff;
+  border-radius: 5px;
+}
+.form-search__button:focus {
+  outline: 3px solid rgba(48, 188, 71, 0.4549019608);
+}
+
+.films {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.films-box {
+  width: 230px;
+  height: 500px;
+  margin: 5px 0;
+  box-shadow: 0px 0px 24px 0px rgba(0, 0, 0, 0.72);
+}
+.films-box__poster {
+  height: 330px;
+  width: 100%;
+  background-size: 230px 330px;
+  animation-duration: 2s;
+  animation-name: backgroundSet;
+}
+.films-box__container-title {
+  width: 100%;
+  height: 60px;
+  background-color: #c5c5bf;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+.films-box__title {
+  text-align: center;
+  font-size: 1em;
+  color: black;
+}
+.films-box__container-description {
+  width: 100%;
+  height: 70px;
+  background-color: #fff;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.films-box__description {
+  font-size: 1em;
+  margin: 2px;
+}
+.films-box__button {
+  width: 100%;
+  height: 40px;
+  background-color: #30bc48;
+  outline: 0;
+  border: 0;
+  color: #fff;
+  border-radius: 5px;
+}
+.films-box__button:focus {
+  outline: 3px solid rgba(48, 188, 71, 0.4549019608);
+}
+
+@keyframes backgroundSet {
+  from {
+    opacity: 0;
+  }
+  to {
+    background: 1;
+  }
+}
+.film-info-gray {
+  position: fixed;
+  z-index: 2;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.5254901961);
+}
+
+.film-info {
+  position: absolute;
+  z-index: 3;
+  width: 80%;
+  height: 550px;
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 10px;
+}
+.film-info__flex {
+  outline: 1px solid gray;
+  display: flex;
+  justify-content: space-between;
+  width: 97%;
+  height: 518px;
+  padding: 5px;
+}
+.film-info__poster {
+  width: 35%;
+  height: 100%;
+  background-color: red;
+  background-size: 100% 100%;
+}
+.film-info__container {
+  width: 64%;
+  height: 100%;
+  overflow: auto;
+}
+.film-info__title {
+  width: 100%;
+  height: 60px;
+  background-color: darkgray;
+  color: #000;
+  font-size: 1em;
+  text-align: center;
+  line-height: 60px;
+  overflow: hidden;
+}
+.film-info__production {
+  font-size: 0.8em;
+  color: darkgray;
+  margin-top: 10px;
+}
+.film-info__text {
+  font-size: 0.8em;
+  color: #000;
+  margin-top: 10px;
+}/*# sourceMappingURL=main.css.map */
